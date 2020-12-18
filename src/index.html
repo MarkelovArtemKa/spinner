@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>PocketSpinner</title>
+</head>
+<body>
+    <section class="main">
+        <nav>
+            <div class="container">
+                <div class="menu">
+                    <div class="name">
+                        <a href="#home">
+                            <div class="the_tag">The</div>
+                            <div class="name_menu">PocketSpinner</div>
+                        </a>
+                    </div>
+                    <div class="menu_base">
+                        <ul class="menu_items">
+                            <a href="#home"><li class="menu_item">Home</li></a>
+                            <a href="#about"><li class="menu_item">About</li></a>
+                            <a href="#team"><li class="menu_item">Team</li></a>
+                            <a href="#"><li class="menu_item">Prices</li></a>
+                            <a href="#"><li class="menu_item">Contact Us</li></a>
+                        </ul>
+                        <div class="menu_links">
+                            <a href="https://www.instagram.com/thepocketspinner/"><div class="menu_link"><img src="logo/instagram-logo.svg" alt="instagram-logo"></div></a>
+                            <a href="mailto: thepocketspinner@gmail.com"><div class="menu_link"><img src="logo/email.svg" alt="email"></div></a>
+                            <a href="https://www.facebook.com/The-Pocket-Spinner-103305365007256/"><div class="menu_link"><img src="logo/facebook-logo.svg" alt="facebook-logo"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main_text" id="home">
+            <div class="main_title">The Pocket Spinner</div>
+            <div class="main_subtitle">THE POCKET SPINNER is very beneficial in learning proper jump technique.  THE POCKET SPINNER allows you to simulate your air position, as you stand on relevé rather than a flat foot. This is important when jumping, because you should be landing on a pointed foot as opposed to a flat foot. THE POCKET SPINNER also allows you to train twizzles by placing the spinner under the center of your foot.  Unlike the majority of off-ice spinners that utilize a bottom rocker to achieve rotation, THE POCKET SPINNER utilizes two machined stainless-steel plates with premium ball bearings between the plates to achieve minimal friction and faster rotation.  </div>
+            <button class="main_btn">Contact Us</button>
+        </div>
+        <div class="link_main">
+            <a href="#about" class="link_down">
+            <img src="logo/download.svg" alt="download">
+            </a>
+        </div>
+    </section>
+    <section class="about" id="about">
+            <div class="title">What we offer?</div>
+            <div class="container">
+            <div class="about_wrapper">
+                <div class="about_block">
+                    <img src="logo/quality.svg" alt="quality">
+                    <div class="about_title">Quality</div>
+                    <div class="about_descr">High quality, industrial-strength adhesive to keep rubber bottom strongly adhered to spinner. Stainless-steel product is MADE IN THE USA, machined and assembled in Minot, North Dakota.</div>
+                </div>
+                <div class="about_block">
+                    <img src="logo/pair-of-gears.svg" alt="pair-of-gears">
+                    <div class="about_title">Easy-to-use</div>
+                    <div class="about_descr">Can be used on a variety of floors:  concrete, rubber/sport, hardwood, and short-carpet.Rubber bottom to keep spinner from slipping out from under you. Will fit in your pocket so you can use at ANY TIME AND PLACE
+                        </div>
+                </div>
+                <div class="about_block">
+                    <img src="logo/artist-color-palette.svg" alt="artist-color-palette">
+                    <div class="about_title">Different designs</div>
+                    <div class="about_descr">Numerous sticker designs to choose from, which will help you keep track of your spinner</div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="team" id="team">
+        <div class="container">
+            <div class="line"></div>
+            <div class="title">Our team</div>
+            <div class="team_wrapper">
+                <div class="team_text">
+                    <div class="team_title">Owner</div>
+                    <div class="team_descr">"My name is Cheri Neset, owner and operator of Dakota Spinners. <br> I was born and raised in Minot, ND.  I started skating when I was 6 years old.  I competed in singles, solo dance, and synchronized skating.  I competed as a member of Magic Blades, a Junior level synchronized skating team.  In 1997, we earned a silver medal at the US Synchronized Skating Championships.  The following season, we were assigned to compete at Spring Cup in Milan, Italy, where we placed third.  We went on to take home the gold medal at the 1998 US Synchronized Skating Championships.  I am a USFS gold medalist in Moves in the Field and Ice Dance and have my Junior FS test. <br> I started coaching while attending college.  I am a PSA rated coach, holding the following ratings:  Certified Moves in the Field, Certified Free Skate, and Registered Synchronized Skating.
+                    <br>    
+                    In 2017, we relocated to Colorado Springs to help our daughter, Leah, pursue her passion in ice dance.  She and her partner, Artem Markelov, are currently competing at the Junior level." <br> - Cheri Neset
+                    </div>
+                </div>
+                 <div class="team_pic"><img src="img/family_pic.jpg" alt="family_pic"></div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal_close">&times;</div>
+            <div class="modal_subtitle">Fill the form</div>
+            <div class="modal_descr">And we will call you back in an hour</div>
+            <form class="form" action="mailer/smart.php" method="POST">
+                <input name="name" required placeholder="Your name" type="text">
+                <input name="phone" required placeholder="Your number">
+                <input name="email" required placeholder="Your Email " type="email">
+                <button class="button button_submit">
+                    Contact us
+                </button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal_close">&times;</div>
+            <div class="modal_subtitle">Thank you for contacting us!</div>
+            <div class="modal_descr">We will be in touch with you soon!</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
