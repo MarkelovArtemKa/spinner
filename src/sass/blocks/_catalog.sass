@@ -1,0 +1,58 @@
+.catalog   
+    background-color: silver
+    min-height: 600px  
+    padding: 75px
+    .title  
+        text-align: center 
+        font-size: 40px
+        font-weight: 600 
+    &_content
+        margin-top: 60px    
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: row
+        &_2
+            margin-top: 50px
+    &_block
+        background-color: white 
+        width: 350px   
+        height: 400px 
+        display: flex
+        justify-content: flex-start 
+        align-items: center
+        flex-direction: column 
+        -moz-transition: all 1.6s ease-out
+        -o-transition: all 1.6s ease-out
+        -webkit-transition: all 1.6s ease-out 
+        &:hover
+            transition: 1.2s all
+            -webkit-transform: scale(1.07)
+            -moz-transform: scale(1.07)
+            -o-transform: scale(1.07)
+    img
+        margin-top: 30px
+        width: 150px    
+        height: auto
+        border-radius: 50%
+        border: solid
+        border-color: #808080
+        border-width: 8px  
+    &_title 
+        margin-top: 30px
+        font-size: 20px 
+        font-weight: 600
+    &_btn
+        margin-top: 20px
+        border-radius: 20px
+        font-size: 18px 
+        background-color: silver
+        border: solid
+        border-color: silver
+        &:hover
+            box-shadow: 3px 3px 20px silver
+            transition: 0.6s all
+    &_price 
+        margin-top: 20px
+        font-size: 30px 
+        font-weight: 800

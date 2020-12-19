@@ -14,6 +14,15 @@ $(document).ready(function() {
     $('.main_btn').click(function(){
         $('#thanks').hide();
     });
+    $('.catalog_btn').each(function(i){
+        $(this).on('click', function(){
+            $('#consultation .modal_descr');
+            $('.overlay, #consultation').fadeIn('slow');
+        });
+    });
+    $('.main_btn').click(function(){
+        $('#thanks').hide();
+    });
     $('input[name=phone]').mask("+1 (999) 999-99-99")
   function validateForms(form){
       $(form).validate({
@@ -41,7 +50,7 @@ $(document).ready(function() {
           }
       });
   };
-    validateForms('#consultation form')
+    validateForms('#consultation form'), validateForms('.contact_us')
   $('form').submit(function(e) {
       e.preventDefault();
       $.ajax({
@@ -69,5 +78,6 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
         });
+    new WOW().init();
 });
 
