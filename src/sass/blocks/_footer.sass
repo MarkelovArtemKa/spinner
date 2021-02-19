@@ -1,3 +1,72 @@
 footer
     background-color: black
-    min-height: 200px   
+    min-height: 200px  
+.footer 
+    &_wrapper   
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: row 
+    &_name   
+        display: flex
+        list-style-type: none
+        margin-right: 150px
+        margin-top: 50px
+        a
+            color: white 
+            -moz-transition: all 1.5s ease-out
+            -o-transition: all 1.5s ease-out
+            -webkit-transition: all 1.5s ease-out    
+            &:hover
+                color: white
+                text-decoration: none    
+                transition: 0.9s all
+                text-shadow: 5px 5px 20px white  
+                transition: 1.5s all
+                -webkit-transform: scale(1.2)
+                -moz-transform: scale(1.2)
+                -o-transform: scale(1.2)     
+        .the
+            &_tag   
+                margin-top: 10px
+                font-size: 30px
+                margin-bottom: -10px
+                margin-left: -20px  
+                font-weight: 600
+    &_links
+        margin-top: 80px
+        margin-left: 60px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        a
+            margin-right: 20px
+            &:last-child
+                margin-right: 0px
+    &_link
+        display: flex
+        justify-content: center
+        align-items: center
+        border: solid
+        color: white
+        border-radius: 20px
+        padding: 8px
+        border-width: 2px  
+        background-color: white
+        -moz-transition: all 2s ease-out
+        -o-transition: all 2s ease-out
+        -webkit-transition: all 2s ease-out 
+        &:hover
+            background-color: white
+            transition: 0.9s all
+            box-shadow: 3px 3px 20px white  
+            border-color: white
+            transition: 1.1s all
+            -webkit-transform: scale(1.3)
+            -moz-transform: scale(1.3)
+            -o-transform: scale(1.3)
+img
+    width: 20px 
+    height: auto
+    

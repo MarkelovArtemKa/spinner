@@ -1,0 +1,242 @@
+@media (max-width: 1025px)
+    .main
+        &_text
+            padding-top: 180px
+            padding-right: 0px  
+    .link
+        &_main
+            padding-bottom: 50px
+    .catalog
+        &_block 
+            margin-right: 40px
+            &:last-child
+                margin-right: 0px
+        &_content
+            &_3
+                display: flex
+                justify-content: center
+                align-items: center
+@media (max-width: 991px)
+    .name   
+        margin-left: -80px  
+    .menu
+        &_items 
+            font-size: 15px 
+            margin-left: -20px  
+    .team   
+        padding-bottom: 60px    
+@media (max-width: 850px)
+    .main  
+        &_title
+            display: block
+            margin: 0 auto
+            color: white
+            font-size: 30px 
+            font-weight: 700
+            text-align: center
+        &_subtitle
+            margin-top: 30px
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0%
+        left: -100%
+        width: 50%
+        height: 100% 
+        padding: 50px 20px
+        background-color: rgba(0,0,0, .8 )
+        transition: 0.6s all
+        &_active
+            left: 0%
+    .name   
+        text-align: center
+        display: block
+        margin: 0 auto
+        margin-bottom: 20px
+    .menu
+        &_base  
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &_items
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            margin-left: 0px
+        &_item
+            margin-bottom: 50px 
+            font-size: 20px 
+        &_links 
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            margin-right: 0px
+    .hamburger
+        display: block
+        position: absolute
+        right: 45px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 3px
+            width: 100%
+            background-color: white
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2) 
+                    display: none 
+                &:nth-child(3) 
+                    transform: translateY(3px) rotate(45deg)
+    .team
+        &_wrapper   
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &_2
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+        &_text
+            margin-right: 0px
+            &_2
+                margin-left: 0px
+                margin-top: 40px
+        &_pic
+            margin-top: 30px 
+@media (max-width: 769px)
+    .main
+        &_text
+            width: 80%
+@media (max-width: 479px)
+    .main   
+        background: url(../img/main.jpg) left bottom no-repeat
+        min-height: 1000px
+    .main
+        &_text
+            width: 100%
+            margin-left: -85px
+    .link
+        &_main
+            a
+                margin-right: 0px
+                margin-top: 0px
+    .about
+        &_wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+        &_block
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            width: 80%
+            margin-right: 0px
+    .catalog
+        &_content
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            margin-top: 80px
+            &:nth-child(1)
+                margin-top: 0px
+        &_block
+            margin-right: 0px
+            margin-top: 80px
+            &:nth-child(1)
+                margin-top: 0px
+    .footer
+        &_links
+            display: none
+        &_name
+            display: block
+            margin: 0 auto
+            margin-top: 50px
+    .modal
+        &_close 
+            right: 10px 
+            top: 6px  
+            color: black      
+@media (max-width: 376px)
+    .link
+        &_main
+            padding-bottom: 30px
+    .about, .team, .catalog
+        .title
+            font-size: 28px
+    .name
+        &_menu
+            font-size: 22px
+        .the 
+            &_tag
+                font-size: 25px
+    .menu
+        &_name
+            font-size: 21px
+    .main
+        &_text
+            width: 120%
+            margin-left: -125px 
+        &_title
+            font-size: 28px  
+    .team
+        &_wrapper
+            img
+                width: 300px
+        &_title
+            &_2
+                font-size: 21px
+        &_descr
+            font-size: 17px
+    .catalog
+        &_block
+            width: 310px
+    .contact
+        .title
+            font-size: 28px
+        .subtitle
+            font-size: 16px
+    .footer
+        &_name
+            .the
+                &_tag
+                    font-size: 25px
+    .contact    
+        width: 80%
+    .form
+        &_wrapper
+            width: 90%
+@media (max-width: 321px)
+    .link
+        &_main 
+            display: none
+    .catalog
+        &_block
+            width: 280px    
+    .name   
+        display: none
+    .menu
+        &_links
+            display: none
+    .modal
+        &_close
+            right: 40px
+            top: 7px    
+            color: black
